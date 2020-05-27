@@ -1,85 +1,146 @@
 <!DOCTYPE html>
-<html lang="en" >
+<html lang="en">
+
 <head>
-  	<meta charset="UTF-8">
+	<meta charset="UTF-8">
 	<title>Mohit Garg | Portfolio</title>
 	<meta name="viewport" content="width = device-width, initial-scale=1.0">
+	<!-- CSS only -->
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+
 	<link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.8.1/css/all.min.css'>
 	<link rel='stylesheet' href='https://fonts.googleapis.com/css?family=Montserrat&amp;display=swap"rel="stylesheet'>
 	<link rel="stylesheet" href="./style.css">
 </head>
+
 <body>
-<!-- partial:index.partial.html -->
-<!-- Side logo is the starting flex -->
-<div class = "side-logo">
-	<main>
+	<!-- partial:index.partial.html -->
+	<!-- Side logo is the starting flex -->
+	<div class="side-logo">
+		<main>
+			<button onclick=" window.open('https://github.com/m999gs','_blank')">
+				<ion-icon name="logo-github"></ion-icon>
+			</button>
+			<button onclick=" window.open('https://www.linkedin.com/in/m999gs/','_blank')">
+				<ion-icon name="logo-linkedin"></ion-icon>
+			</button>
+			<button onclick=" window.open('https://www.facebook.com/m999g','_blank')">
+				<ion-icon name="logo-facebook"></ion-icon>
+			</button>
+			<button onclick=" window.open('https://twitter.com/m999gs','_blank')">
+				<ion-icon name="logo-twitter"></ion-icon>
+			</button>
+			<button onclick=" window.open('https://www.instagram.com/mohituf/','_blank')">
+				<ion-icon name="logo-instagram"></ion-icon>
+			</button>
+			<button
+				onclick=" window.open('https://www.youtube.com/channel/UCudLHyuXrxwoPJm15zebfGQ?view_as=subscriber','_blank')">
+				<ion-icon name="logo-youtube"></ion-icon>
+			</button>
 
-		<button onclick=" window.open('https://github.com/m999gs','_blank')">
-			<ion-icon name="logo-github"></ion-icon>
-		</button>
-		<button onclick=" window.open('https://www.linkedin.com/in/m999gs/','_blank')">
-			<ion-icon name="logo-linkedin"></ion-icon>
-		</button>
-		<button onclick=" window.open('https://www.facebook.com/m999g','_blank')">
-			<ion-icon name="logo-facebook"></ion-icon>
-		</button>
-		<button onclick=" window.open('https://twitter.com/m999gs','_blank')">
-			<ion-icon name="logo-twitter"></ion-icon>
-		</button>
-		<button onclick=" window.open('https://www.instagram.com/mohituf/','_blank')">
-			<ion-icon name="logo-instagram"></ion-icon>
-		</button>
-		<button onclick=" window.open('https://www.youtube.com/channel/UCudLHyuXrxwoPJm15zebfGQ?view_as=subscriber','_blank')">
-			<ion-icon name="logo-youtube"></ion-icon>
-		</button>
-	
-	</main>
-</div>
-
-<!-- Introduction -->
-<section class="intro">
-	<h4 class ="intro_hi">Hi, I am </h4>
-	<h1 class="intro_name">
-		<strong>Mohit Garg</strong>
-	</h1>
-	<h2 class="intro_name_subtitle">Masters student at University of Florida, FL.</h2>
-	
-	<p class="intro_para">short description about yourself. Contrary to popular belief, Lorem Ipsum is not 
-		simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 
-		2000 years old. Richard McClintock, a Latin professor at Hampden-Sydney College in Virginia, looked up 
-		one of the more obscure Latin words, consectetur.</p>
-</section>
-
-<!-- About me -->
-<section class="about-me" id="about">
-	<h2 class="section__title section__title--about">Who I am</h2>
-	<p class="section__subtitle section__subtitle--about"> Software developer </p>
-   
-	<div class="about-me__body">
-		<p>short description about yourself. Contrary to popular belief, Lorem Ipsum is not 
-			simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 
-			2000 years old. Richard McClintock.</p>
-		<p> short description about yourself. Contrary to popular belief, Lorem Ipsum is not 
-			simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 
-			2000 years old. Richard McClintock.</p>
+		</main>
 	</div>
-	<img src ="images/my_pic.jpg" alt="my picture here" class="about-me__img">
 
-</section>
+	<div class="side-logo2 row">
+		<main class="main-style">
+			<button class = "main_style_button" ><a href="#home" class="nav__link">Home</a></button>
+
+			<button class = "main_style_button" ><a href="#about" class="nav__link">About me</a></button>
+
+			<button class = "main_style_button" ><a href="#proj" class="nav__link">Projects</a></button>
+
+			<button class = "main_style_button" ><a href="#Contact" class="nav__link">Contact me!</a></button>
+		</main>
+	</div>
+
+	<!-- Introduction -->
+	<section class="intro" id="home">
+		<h4 class="intro_hi">Hi, I am </h4>
+		<h1 class="intro_name">
+			<strong>Mohit Garg</strong>
+		</h1>
+		<h2 class="intro_name_subtitle">Masters student at University of Florida, FL.</h2>
+
+		<p class="intro_para">short description about yourself. Contrary to popular belief, Lorem Ipsum is not
+			simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over
+			2000 years old. Richard McClintock, a Latin professor at Hampden-Sydney College in Virginia, looked up
+			one of the more obscure Latin words, consectetur.</p>
+	</section>
+
+	<!-- About me -->
+	<section class="about-me" id="about">
+		<h2 class="section__title section__title--about">Who I am</h2>
+		<p class="section__subtitle section__subtitle--about"> Software developer </p>
+
+		<div class="about-me__body">
+			<p>short description about yourself. Contrary to popular belief, Lorem Ipsum is not
+				simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over
+				2000 years old. Richard McClintock.</p>
+			<p> short description about yourself. Contrary to popular belief, Lorem Ipsum is not
+				simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over
+				2000 years old. Richard McClintock.</p>
+		</div>
+		<img src="images/my_pic.jpg" alt="my picture here" class="about-me__img">
+
+	</section>
+
+	<!-- Projects -->
+	<section class="projects" id="proj">
+		<h2 class="section__title">My Projects</h2>
+		<p class="section__subtitle"></p>
+
+		<div class="portfolio">
+			<a href="https://github.com/m999gs/COVID19" target="_blank" class="project-items">
+				<img src="images/covid-thum-3.jpeg" class="proj-image">
+			</a>
+			<a href="https://github.com/m999gs/faceRecognitionML" target="_blank" class="project-items">
+				<img src="images/face-recog-1.png" class="proj-image">
+			</a>
+			<a href="https://github.com/m999gs/PDollar-NUI" target="_blank" class="project-items">
+				<img src="images/p-recog.png" class="proj-image">
+			</a>
+			<a href="https://github.com/m999gs/Twitter-web-application" target="_blank" class="project-items">
+				<img src="images/twitter-thimb.jpg" class="proj-image">
+			</a>
+			<a href="https://github.com/m999gs/Tapestry-Algorithm" target="_blank" class="project-items">
+				<img src="images/tapestry.jpeg" class="proj-image">
+			</a>
+			<a href="https://github.com/ar4757/Handwriting-Calculator" target="_blank" class="project-items">
+				<img src="images/handwriting.jpeg" class="proj-image">
+			</a>
+		</div>
+		<div class="proj-button">
+			<main class="main-style">
+				<button onclick=" window.open('https://github.com/m999gs','_blank')"> More Projects</button>
+			</main>
+		</div>
+	</section>
+
+	<!-- Contact me -->
+	<section class="Contact_me" id="Contact">
+		<h1 class="contact_title">Contact me</h1>
+		<p class="contact_para">I’m open for software developer job offers. You can contact me on my email or on
+			LinkedIn for quick response.</p>
+
+		<button>
+			Say hello!
+		</button>
+	</section>
 
 
-<div class="cursor cursor--large"></div>
-<div class="cursor cursor--small"></div>
+	<div class="cursor cursor--large"></div>
+	<div class="cursor cursor--small"></div>
 
 
-<div class="support">
-	<a href="https://twitter.com/m999gs" target="_blank"><i class="fab fa-twitter-square"></i></a>
-</div>
-<!-- partial -->
-<script src='https://cdnjs.cloudflare.com/ajax/libs/gsap/3.1.1/gsap.min.js'></script>
-<script src='https://unpkg.com/ionicons@5.0.0/dist/ionicons.js'></script>
+	<div class="support">
+		<a href="https://twitter.com/m999gs" target="_blank"><i class="fab fa-twitter-square"></i></a>
+	</div>
+	<!-- partial -->
+	<script src='https://cdnjs.cloudflare.com/ajax/libs/gsap/3.1.1/gsap.min.js'></script>
+	<script src='https://unpkg.com/ionicons@5.0.0/dist/ionicons.js'></script>
 
-<script  src="./script.js"></script>
+	<script src="./script.js"></script>
 
 </body>
+
 </html>

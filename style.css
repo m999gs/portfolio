@@ -59,6 +59,73 @@ section {
   position: fixed;
   justify-content: flex-start;
 }
+
+/* button effect */
+
+main {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-start	;
+  align-items: center;
+  -webkit-flex-direction: column; 
+  flex-direction: column; 
+  float: left;
+}
+main button {
+  --size: 60px;
+  border: none;
+  min-width: var(--size);
+  min-height: var(--size);
+  display: flex;
+  justify-content: center;
+  align-items: left;
+  font-size: 1.2rem;
+  background: rgba(255, 255, 255, 0.08);
+  color: #fff;
+  transition: background 200ms ease, color 200ms ease;
+  cursor: none;
+}
+main:hover button {
+  background: rgba(255, 255, 255, 0.04);
+  color: rgba(255, 255, 255, 0.04);
+}
+main:hover button:hover {
+  color: #fff;
+}
+
+.side-logo2{
+  display: flex;
+  position: fixed;
+}
+
+/* button effect */
+
+.main-style {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.main_style_button{
+  --size: 60px;
+  min-width: var(--size);
+  min-height: var(--size);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.2rem;
+  background: rgba(255, 255, 255, 0.08);
+  color: #fff;
+  transition: background 200ms ease, color 200ms ease;
+  cursor: none;
+}
+
+.nav__link {
+  color: inherit;
+  font-weight: var(--fw-bold);
+  font-size: var(--fs-h6);
+  text-decoration: none;
+}
+
 .cursor {
   width: var(--size);
   height: var(--size);
@@ -86,7 +153,6 @@ body {
     font-family: var(--ff-primary);
     font-size: var(--fs-body);
     line-height: 1.6;
-
     width: 100%;
     height: 100vh;
     cursor: none;
@@ -184,46 +250,49 @@ h4 { font-size: var(--fs-h4);
 }
 
 
-main {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: flex-start	;
-  align-items: center;
-  -webkit-flex-direction: column; 
-  flex-direction: column; 
-  float: left;
-}
-main button {
-  --size: 60px;
-  border: none;
-  min-width: var(--size);
-  min-height: var(--size);
-  display: flex;
-  justify-content: center;
-  align-items: left;
-  font-size: 1.2rem;
-  background: rgba(255, 255, 255, 0.08);
-  color: #fff;
-  transition: background 200ms ease, color 200ms ease;
-  cursor: none;
-}
-main:hover button {
-  background: rgba(255, 255, 255, 0.04);
-  color: rgba(255, 255, 255, 0.04);
-}
-main:hover button:hover {
-  color: #fff;
+/* Projects */
+
+.projects {
+  background-color: var(--clr-dark);
+  color: var(--clr-light);
+  margin-left: 3em;
+  height: 130%;
+  text-align: center;    
 }
 
-.my-name{
-  position: relative;
-  left: 50px;
-  top: 120px;
-  font-size: xx-large;
+.portfolio {
+  display: grid;
   padding: 10px;
-  display: flex;
+  border: dashed;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
 }
 
+.project-items{
+  width: auto;
+  height: auto;
+  align-self: center;
+  overflow: hidden;
+}
+
+.proj-image{
+  transition: 
+      transform 750ms cubic-bezier(.5, 0, .5, 1),
+      opacity 250ms linear;
+}
+.proj-button{
+  text-align: center;
+}
+.proj-image:hover,
+.project-items:focus .proj-image {
+  transform: scale(1.2);
+  opacity: .8;
+}
+
+/* Contact me */
+
+.Contact_me{
+  text-align: center;
+}
 .support {
   position: absolute;
   right: 10px;
