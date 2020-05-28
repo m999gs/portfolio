@@ -118,6 +118,7 @@ button:hover {
 }
 
 .flex-container {
+  padding: 5px;
   float: right;
 }
 
