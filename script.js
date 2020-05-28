@@ -64,7 +64,7 @@ function handleMouseEnter(e) {
 		x: targetBox.left + targetBox.width / 2,
 		y: targetBox.top + targetBox.height / 2,
 		width: targetBox.width,
-		height: targetBox.width,
+		height: targetBox.height,
 		borderRadius: 0,
 		backgroundColor: "rgba(255, 255, 255, 0.1)",
 	});

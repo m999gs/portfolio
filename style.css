@@ -62,7 +62,7 @@ a:hover{
 .side-logo{
   display: flex;
   align-items: center;
-  padding-top: 10%;
+  padding-top: 15%;
   position: fixed;
   justify-content: flex-start;
 }
@@ -135,7 +135,7 @@ button:hover {
   width: 150px;
   text-align: center;
   border: none;
-  margin-right: 5px;
+  margin: 5px;
   background: rgba(255, 255, 255, 0.08);
 }
 
@@ -204,6 +204,7 @@ h4 { font-size: var(--fs-h4);
 
 /* Intro section */
 .intro{
+    padding-left: 7rem;
     padding-top: 15%;
 }
 
