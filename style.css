@@ -45,6 +45,11 @@ section {
     padding: 5em 2em;
 }
 
+a:hover{
+  text-decoration: none;
+  color: #fff;
+}
+
 .section__subtitle--about {
     background: var(--clr-accent);
     padding: .25em 1em;
@@ -93,35 +98,28 @@ main:hover button:hover {
   color: #fff;
 }
 
+button{
+  font-size: 1.2rem;
+  background: rgba(255, 255, 255, 0.08);
+  border: none;
+  color: #fff;
+}
+.other_buttons{
+  padding: 15px;
+}
+button:hover {
+  background: rgba(255, 255, 255, 0.04);
+  color: #fff;
+}
+
 .side-logo2{
   display: flex;
   position: fixed;
 }
 
-/* button effect */
-
-.main-style {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-}
-.main_style_button{
-  --size: 60px;
-  min-width: var(--size);
-  min-height: var(--size);
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  font-size: 1.2rem;
-  background: rgba(255, 255, 255, 0.08);
-  color: #fff;
-  transition: background 200ms ease, color 200ms ease;
-  cursor: none;
-}
 
 .nav__link {
   color: inherit;
-  font-weight: var(--fw-bold);
   font-size: var(--fs-h6);
   text-decoration: none;
 }
@@ -280,7 +278,9 @@ h4 { font-size: var(--fs-h4);
       opacity 250ms linear;
 }
 .proj-button{
-  text-align: center;
+  padding-top: 2%;
+  display: flex;
+  justify-content: center;
 }
 .proj-image:hover,
 .project-items:focus .proj-image {
@@ -291,8 +291,68 @@ h4 { font-size: var(--fs-h4);
 /* Contact me */
 
 .Contact_me{
+  padding-top: 12%;
   text-align: center;
+  margin-bottom: auto;
 }
+
+
+.contact_para{
+  padding-top: 5%;
+}
+
+.contact_button{
+  padding-top: 5%;
+  display: flex;
+  justify-content: center;
+}
+
+
+/* footer */
+
+.footer {
+  background: #111;
+  color: var(--clr-accent);
+  text-align: center;
+  padding: 2.5em 0;
+  font-size: var(--fs-h3);
+
+}
+
+.footer a { 
+  color: inherit;
+  text-decoration: none;
+}
+
+.footer__link {
+  font-weight: var(--fw-bold);
+}
+
+.footer__link:hover,
+.social-list__link:hover {
+  opacity: .7;
+}
+
+.footer__link:hover {
+  text-decoration: underline;
+}
+
+.social-list {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  margin: 2em 0;
+  padding: 0;
+}
+
+.social-list__item {
+  margin: 0 .5em;
+}
+
+.social-list__link {
+  padding: .5em;
+}
+
 .support {
   position: absolute;
   right: 10px;
