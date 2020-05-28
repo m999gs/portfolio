@@ -40,11 +40,13 @@
     }
 }
 section {
-  height: 100%;
-  margin-left: 100px;
-    padding: 5em 2em;
+  height: auto;
+  padding: 5em 6em;
 }
-
+a{
+  text-decoration: none;
+  color: #fff;
+}
 a:hover{
   text-decoration: none;
   color: #fff;
@@ -60,7 +62,7 @@ a:hover{
 .side-logo{
   display: flex;
   align-items: center;
-  padding-top: 15%;
+  padding-top: 10%;
   position: fixed;
   justify-content: flex-start;
 }
@@ -76,6 +78,13 @@ main {
   flex-direction: column; 
   float: left;
 }
+.navigation-boxes{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-start	;
+  align-items: center;
+  flex-direction: row;
+}
 main button {
   --size: 60px;
   border: none;
@@ -83,7 +92,7 @@ main button {
   min-height: var(--size);
   display: flex;
   justify-content: center;
-  align-items: left;
+  align-items: center;
   font-size: 1.2rem;
   background: rgba(255, 255, 255, 0.08);
   color: #fff;
@@ -126,23 +135,11 @@ button:hover {
   width: 150px;
   text-align: center;
   border: none;
+  margin-right: 5px;
   background: rgba(255, 255, 255, 0.08);
 }
 
 /* button effect */
-
-.main_style_button{
-  --size: 60px;
-  min-width: var(--size);
-  min-height: var(--size);
-  font-size: 1.2rem;
-  background: none;
-  color: #fff;
-  transition: background 200ms ease, color 200ms ease;
-  cursor: none;
-  border: none;
-  z-index: 101
-}
 
 .nav__link {
   color: inherit;
@@ -280,7 +277,7 @@ h4 { font-size: var(--fs-h4);
   background-color: var(--clr-dark);
   color: var(--clr-light);
   margin-left: 3em;
-  height: 130%;
+  height: 130vh;
   text-align: center;    
 }
 
@@ -292,8 +289,8 @@ h4 { font-size: var(--fs-h4);
 }
 
 .project-items{
-  width: auto;
-  height: auto;
+  width: 300px auto;
+  height: 120px auto;
   align-self: center;
   overflow: hidden;
 }
@@ -321,7 +318,6 @@ h4 { font-size: var(--fs-h4);
   text-align: center;
   margin-bottom: auto;
 }
-
 
 .contact_para{
   padding-top: 5%;
