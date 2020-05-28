@@ -117,11 +117,37 @@ button:hover {
   position: fixed;
 }
 
+.flex-container {
+  float: right;
+}
+
+.flex-container > button {
+  width: 150px;
+  text-align: center;
+  border: none;
+  background: rgba(255, 255, 255, 0.08);
+}
+
+/* button effect */
+
+.main_style_button{
+  --size: 60px;
+  min-width: var(--size);
+  min-height: var(--size);
+  font-size: 1.2rem;
+  background: none;
+  color: #fff;
+  transition: background 200ms ease, color 200ms ease;
+  cursor: none;
+  border: none;
+  z-index: 101
+}
 
 .nav__link {
   color: inherit;
   font-size: var(--fs-h6);
   text-decoration: none;
+  z-index: 100
 }
 
 .cursor {
@@ -180,7 +206,6 @@ h4 { font-size: var(--fs-h4);
 
 /* Intro section */
 .intro{
-    position: relative;
     padding-top: 15%;
 }
 
