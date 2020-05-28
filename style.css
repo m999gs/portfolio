@@ -230,8 +230,6 @@ h4 { font-size: var(--fs-h4);
 
 .about-me {
     max-width: 1000px;
-    padding-top: 16%;
-    padding-bottom: 16%;
     margin: 0 auto;
 }
 
