@@ -16,9 +16,10 @@
     --fw-bold: 900;
     
     --clr-light: #fff;
-    --clr-dark: #121212;
+    --clr-dark: #000000;
     --clr-accent: #ff3c3c;
     --clr-darktext: #918e8e;
+    --clr-light-background:#212020;
     
     --fs-h1: 3rem;
     --fs-h2: 2.25rem;
@@ -41,15 +42,16 @@
 }
 section {
   height: auto;
+  min-height: 100vh;
   padding: 5em 6em;
 }
 a{
   text-decoration: none;
-  color: #fff;
+  color: var(--clr-light);
 }
 a:hover{
   text-decoration: none;
-  color: #fff;
+  color: var(--clr-light);
 }
 
 .section__subtitle--about {
@@ -95,7 +97,7 @@ main button {
   align-items: center;
   font-size: 1.2rem;
   background: rgba(255, 255, 255, 0.08);
-  color: #fff;
+  color: var(--clr-light);
   transition: background 200ms ease, color 200ms ease;
   cursor: none;
 }
@@ -104,21 +106,21 @@ main:hover button {
   color: rgba(255, 255, 255, 0.04);
 }
 main:hover button:hover {
-  color: #fff;
+  color: var(--clr-light);
 }
 
 button{
   font-size: 1.2rem;
   background: rgba(255, 255, 255, 0.08);
   border: none;
-  color: #fff;
+  color: var(--clr-light);
 }
 .other_buttons{
   padding: 15px;
 }
 button:hover {
   background: rgba(255, 255, 255, 0.04);
-  color: #fff;
+  color: var(--clr-light);
 }
 
 .side-logo2{
@@ -132,7 +134,7 @@ button:hover {
 }
 
 .flex-container > button {
-  width: 150px;
+  width: 120px;
   text-align: center;
   border: none;
   margin: 5px;
@@ -205,18 +207,18 @@ h4 { font-size: var(--fs-h4);
 /* Intro section */
 .intro{
     padding-left: 7rem;
-    padding-top: 15%;
+    padding-top: 12%;
 }
 
 .intro_hi{
     font-weight: var(--fw-reg);
 }
 .intro_name{
-    color: #ededed;
+    color: var(--clr-light);
 }
 
 .intro_name_subtitle{
-    color: #9e9d9d;
+    color:  #9e9d9d;
 }
 
 .intro_para{
@@ -229,8 +231,25 @@ h4 { font-size: var(--fs-h4);
 
 
 .about-me {
-    max-width: 1000px;
+  background-color: var(--clr-light-background);
+  padding-top: 10%;
+  padding-bottom: 15%;
     margin: 0 auto;
+}
+
+.aboutme_table {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(140px, 200px));
+  padding-left: 10px;
+  margin: 20px 0px 0px;
+  list-style: circle;
+}
+.aboutme_table_list {
+  position: relative;
+  margin-bottom: 10px;
+  padding-left: 20px;
+  font-family: var(--ff-secondary);
+  font-size: 14px;
 }
 
 /* .about-me__img {
@@ -256,8 +275,7 @@ h4 { font-size: var(--fs-h4);
         grid-column: 1 / -1;
         grid-row: 2;
         position: relative;
-        left: -1em;
-        width: calc(100% + 2em);
+        width: calc(100%);
         padding-left: 1em;
         padding-right: calc(200px + 4em);
     }
@@ -276,20 +294,21 @@ h4 { font-size: var(--fs-h4);
   background-color: var(--clr-dark);
   color: var(--clr-light);
   margin-left: 3em;
-  height: 130vh;
-  text-align: center;    
+  text-align: center;
+  overflow: hidden;    
 }
 
 .portfolio {
   display: grid;
   padding: 10px;
   border: dashed;
+  overflow: hidden;
   grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
 }
 
 .project-items{
   width: 300px auto;
-  height: 120px auto;
+  height: 240px auto;
   align-self: center;
   overflow: hidden;
 }
@@ -313,7 +332,9 @@ h4 { font-size: var(--fs-h4);
 /* Contact me */
 
 .Contact_me{
+  background-color: var(--clr-light-background);
   padding-top: 12%;
+  width: 100%;
   text-align: center;
   margin-bottom: auto;
 }
@@ -383,7 +404,7 @@ h4 { font-size: var(--fs-h4);
 }
 .support a {
   margin: 0 10px;
-  color: #fff;
+  color: var(--clr-light);
   font-size: 1.8rem;
   backface-visibility: hidden;
   transition: all 150ms ease;

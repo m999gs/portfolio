@@ -74,7 +74,7 @@ function handleMouseLeave(e) {
 	isStuck = false;
 	gsap.to(cursorOuter, 0.2, {
 		width: cursorOuterOriginalState.width,
-		height: cursorOuterOriginalState.width,
+		height: cursorOuterOriginalState.height,
 		borderRadius: "50%",
 		backgroundColor: "transparent",
 	});
