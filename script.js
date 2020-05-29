@@ -59,10 +59,12 @@ updateCursor();
 
 function handleMouseEnter(e) {
 	isStuck = true;
+	var bodyRect = document.body.getBoundingClientRect();
 	const targetBox = e.currentTarget.getBoundingClientRect();
+	var offset = targetBox.top - bodyRect.top;
 	gsap.to(cursorOuter, 0.2, {
 		x: targetBox.left + targetBox.width / 2,
-		y: targetBox.top + targetBox.height / 2,
+		y: offset + targetBox.height / 2,
 		width: targetBox.width,
 		height: targetBox.height,
 		borderRadius: 0,
