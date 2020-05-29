@@ -27,8 +27,8 @@
     --fs-body: 1rem;
 
     /* image backgroud shadow */
-    /* --bs: 0.25em 0.25em 0.75em rgba(243,235,235,1),
-          0.125em 0.125em 0.25em rgba(243,235,235,.5); */
+    --bs: 0.25em 0.25em 0.75em rgba(0,0,0,.8),
+          0.125em 0.125em 0.25em rgba(0,0,0,.5);
 }
 
 @media (min-width: 800px) {
@@ -140,6 +140,9 @@ button:hover {
   margin: 5px;
   background: rgba(255, 255, 255, 0.08);
 }
+.resume-button:hover{
+  background: rgba(255, 0, 0, 0.8);
+}
 
 /* button effect */
 
@@ -203,7 +206,14 @@ h3 { font-size: var(--fs-h3) }
 h4 { font-size: var(--fs-h4);
     color: var(--clr-accent);
 }
-
+.initial-logo{
+  padding-left: 10px;
+  float: left;
+  max-width: 15%;
+  max-height: 15%;
+  padding-top: 10px;
+  z-index: 2;
+}
 /* Intro section */
 .intro{
     padding-left: 7rem;
@@ -239,10 +249,13 @@ h4 { font-size: var(--fs-h4);
 
 .aboutme_table {
   display: grid;
-  grid-template-columns: repeat(2, minmax(140px, 200px));
+  grid-template-columns: repeat(2, minmax(140px, 250px));
   padding-left: 10px;
   margin: 20px 0px 0px;
   list-style: circle;
+}
+.about-me__body{
+  max-width: 600px;
 }
 .aboutme_table_list {
   position: relative;
@@ -252,9 +265,14 @@ h4 { font-size: var(--fs-h4);
   font-size: 14px;
 }
 
-/* .about-me__img {
+.about-me__img {
     box-shadow: var(--bs);
-} */
+    transition-duration: 0.5s;
+}
+.about-me__img:hover {
+  transform: scale(1.05);
+  transition-duration: 0.5s;
+}
 
 @media (min-width: 600px) {
     .about-me {
@@ -362,7 +380,7 @@ h4 { font-size: var(--fs-h4);
 }
 
 .footer a { 
-  color: inherit;
+  color: var(--clr-light);
   text-decoration: none;
 }
 
@@ -370,13 +388,9 @@ h4 { font-size: var(--fs-h4);
   font-weight: var(--fw-bold);
 }
 
-.footer__link:hover,
-.social-list__link:hover {
-  opacity: .7;
-}
-
 .footer__link:hover {
-  text-decoration: underline;
+  transform: scale(1.5);
+  transition-duration: 0.5s;
 }
 
 .social-list {
@@ -389,6 +403,12 @@ h4 { font-size: var(--fs-h4);
 
 .social-list__item {
   margin: 0 .5em;
+  transition-duration: 0.5s;
+}
+
+.social-list__item:hover {
+  transform: scale(1.5);
+  transition-duration: 0.5s;
 }
 
 .social-list__link {
