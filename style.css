@@ -325,28 +325,45 @@ h4 { font-size: var(--fs-h4);
 }
 
 .project-items{
-  width: 300px auto;
-  height: 240px auto;
+  height: 260px;
   align-self: center;
   overflow: hidden;
+  border-radius: 10px;
+  background: rgba(255, 255, 255, 0.08);
+  transition:0.5s;
+}
+.project-items img{
+  height: 100%;
+}
+.project-items:hover .proj-image{
+  margin-top: -80px;
+  overflow: hidden;
+  transition:0.5s;
+}
+.proj-image{
+  overflow: hidden;
+  transition:0.5s;
+}
+.image-name {
+  color:var(--clr-light);
+  font-weight:bold;
+  padding:5px;
+}
+.image-name h1 {
+  font-size:25px;
+}
+.image-name span {
+  font-size:20px;
+  color:var(--clr-light);
+  padding:0px;
 }
 
-.proj-image{
-  transition: 
-      transform 750ms cubic-bezier(.5, 0, .5, 1),
-      opacity 250ms linear;
-}
+
 .proj-button{
   padding-top: 2%;
   display: flex;
   justify-content: center;
 }
-.proj-image:hover,
-.project-items:focus .proj-image {
-  transform: scale(1.2);
-  opacity: .8;
-}
-
 /* Contact me */
 
 .Contact_me{
