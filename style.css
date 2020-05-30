@@ -374,7 +374,7 @@ h4 { font-size: var(--fs-h4);
   background: #111;
   color: var(--clr-accent);
   text-align: center;
-  padding: 2.5em 0;
+  padding: 1em 0;
   font-size: var(--fs-h3);
 
 }
@@ -397,8 +397,7 @@ h4 { font-size: var(--fs-h4);
   list-style: none;
   display: flex;
   justify-content: center;
-  margin: 2em 0;
-  padding: 0;
+  margin: 1em 0;
 }
 
 .social-list__item {
@@ -409,26 +408,4 @@ h4 { font-size: var(--fs-h4);
 .social-list__item:hover {
   transform: scale(1.5);
   transition-duration: 0.5s;
-}
-
-.social-list__link {
-  padding: .5em;
-}
-
-.support {
-  position: absolute;
-  right: 10px;
-  bottom: 10px;
-  padding: 10px;
-  display: flex;
-}
-.support a {
-  margin: 0 10px;
-  color: var(--clr-light);
-  font-size: 1.8rem;
-  backface-visibility: hidden;
-  transition: all 150ms ease;
-}
-.support a:hover {
-  transform: scale(1.5);
 }
