@@ -18,7 +18,7 @@
     --clr-light: #fff;
     --clr-dark: #000000;
     --clr-accent: #ff3c3c;
-    --clr-darktext: #918e8e;
+    --clr-darktext: #9d9fa1;
     --clr-light-background:#212020;
     
     --fs-h1: 3rem;
@@ -96,14 +96,14 @@ main button {
   justify-content: center;
   align-items: center;
   font-size: 1.2rem;
-  background: rgba(255, 255, 255, 0.08);
+  background: rgba(255, 255, 255, 0.2);
   color: var(--clr-light);
   transition: background 200ms ease, color 200ms ease;
   cursor: none;
 }
 main:hover button {
-  background: rgba(255, 255, 255, 0.04);
-  color: rgba(255, 255, 255, 0.04);
+  background: rgba(255, 255, 255, 0.08);
+  color: rgba(255, 255, 255, 0.2);
 }
 main:hover button:hover {
   color: var(--clr-light);
@@ -138,10 +138,10 @@ button:hover {
   text-align: center;
   border: none;
   margin: 5px;
-  background: rgba(255, 255, 255, 0.08);
+  background: rgba(255, 255, 255, 0.2);
 }
 .resume-button:hover{
-  background: rgba(255, 0, 0, 0.8);
+  background: rgba(255, 0, 0, 0.9);
 }
 
 /* button effect */
@@ -327,6 +327,7 @@ h4 { font-size: var(--fs-h4);
   display: grid;
   margin: 10px;
   border: dashed;
+  margin-top: 2.5rem;
   overflow: hidden;
   grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
 }
