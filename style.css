@@ -174,20 +174,20 @@ button:hover {
 }
 
 body {
-    background: var(--clr-dark);
-    color: var(--clr-light);
-    margin: 0;
-    font-family: var(--ff-primary);
-    font-size: var(--fs-body);
-    line-height: 1.6;
-    width: 100%;
-    height: 100vh;
-    cursor: none;
+  background: var(--clr-dark);
+  color: var(--clr-light);
+  margin: 0;
+  font-family: var(--ff-primary);
+  font-size: var(--fs-body);
+  line-height: 1.6;
+  width: 100%;
+  height: 100vh;
+  cursor: none;
 }
 
 img {
-    display: block;
-    max-width: 100%;
+  display: block;
+  max-width: 100%;
 }
 
 /* Typography */
@@ -196,15 +196,15 @@ h1,
 h2,
 h3,
 h4 {
-    line-height: 1.1;
-    margin: 0;
+  line-height: 1.1;
+  margin: 0;
 }
 
 h1 { font-size: var(--fs-h1) }
 h2 { font-size: var(--fs-h2) }
 h3 { font-size: var(--fs-h3) }
 h4 { font-size: var(--fs-h4);
-    color: var(--clr-accent);
+  color: var(--clr-accent);
 }
 .initial-logo{
   padding-left: 10px;
@@ -216,25 +216,30 @@ h4 { font-size: var(--fs-h4);
 }
 /* Intro section */
 .intro{
-    padding-left: 7rem;
-    padding-top: 12%;
+  padding-left: 7rem;
+  padding-top: 12%;
 }
 
 .intro_hi{
-    font-weight: var(--fw-reg);
+  font-weight: var(--fw-reg);
 }
 .intro_name{
-    color: var(--clr-light);
+  color: var(--clr-light);
 }
 
 .intro_name_subtitle{
-    color:  #9e9d9d;
+  color:  #9e9d9d;
 }
 
 .intro_para{
-    max-width: 40em;
-    color: var(--clr-darktext);
-    margin-top: 3em;
+  max-width: 35em;
+  color: var(--clr-darktext);
+  margin-top: 3em;
+  text-align: justify;
+  text-justify: inter-word;
+}
+.intro_button{
+  margin-top: 3rem;
 }
 
 /* about me section */
@@ -244,7 +249,7 @@ h4 { font-size: var(--fs-h4);
   background-color: var(--clr-light-background);
   padding-top: 10%;
   padding-bottom: 15%;
-    margin: 0 auto;
+  margin: 0 auto;
 }
 
 .aboutme_table {
@@ -255,7 +260,9 @@ h4 { font-size: var(--fs-h4);
   list-style: circle;
 }
 .about-me__body{
-  max-width: 600px;
+  max-width: 700px;
+  text-align: justify;
+  text-justify: inter-word;
 }
 .aboutme_table_list {
   position: relative;
