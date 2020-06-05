@@ -9,26 +9,26 @@
 /* Custom Properties, update these for your own design */
 
 :root {
-    --ff-primary: 'Source Sans Pro', sans-serif;
-    --ff-secondary: 'Source Code Pro', monospace;
-    
-    --fw-reg: 300;
-    --fw-bold: 900;
-    
-    --clr-light: #fff;
-    --clr-dark: #000000;
-    --clr-accent: #ff3c3c;
-    --clr-darktext: #9d9fa1;
-    --clr-light-background:#212020;
-    
-    --fs-h1: 3rem;
-    --fs-h2: 2.25rem;
-    --fs-h3: 1.25rem;
-    --fs-body: 1rem;
+  --ff-primary: 'Source Sans Pro', sans-serif;
+  --ff-secondary: 'Source Code Pro', monospace;
+  
+  --fw-reg: 300;
+  --fw-bold: 900;
+  
+  --clr-light: #fff;
+  --clr-dark: #000000;
+  --clr-accent: #ff3c3c;
+  --clr-darktext: #9d9fa1;
+  --clr-light-background:#212020;
+  
+  --fs-h1: 3rem;
+  --fs-h2: 2.25rem;
+  --fs-h3: 1.25rem;
+  --fs-body: 1rem;
 
-    /* image backgroud shadow */
-    --bs: 0.25em 0.25em 0.75em rgba(0,0,0,.8),
-          0.125em 0.125em 0.25em rgba(0,0,0,.5);
+  /* image backgroud shadow */
+  --bs: 0.25em 0.25em 0.75em rgba(0,0,0,.8),
+        0.125em 0.125em 0.25em rgba(0,0,0,.5);
 }
 
 @media (min-width: 800px) {
@@ -64,9 +64,15 @@ a:hover{
 .side-logo{
   display: flex;
   align-items: center;
-  padding-top: 15%;
+  padding-top: 120px;
   position: fixed;
   justify-content: flex-start;
+}
+
+@media screen and (max-width: 800px){
+  .side-logo{
+    padding-top: 120px;
+  }
 }
 
 /* button effect */
@@ -86,6 +92,71 @@ main {
   justify-content: flex-start	;
   align-items: center;
   flex-direction: row;
+}
+
+
+
+@media screen and (max-width: 800px){
+  .hamburger {
+    display: block;
+    position: fixed;
+    right: 2.3em;
+    top: 2.3em;
+    background: var(--clr-dark);
+  }
+
+  .hamburger,
+  .hamburger::before,
+  .hamburger::after {
+    background: var(--clr-light);
+    width: 2em;
+    height: 3px;
+    border-radius: 1em;
+  }
+
+
+  .hamburger::before,
+  .hamburger::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    right: 0;
+  }
+
+  .hamburger::before { top: 6px; }
+  .hamburger::after { bottom: 6px; }
+
+  .navigation-boxes{
+    transform: translateX(1000%);
+    flex-direction: column;
+    margin-top: 100px;
+    transition: transform 250ms cubic-bezier(.5, 0, .5, 1);
+    z-index: 100;
+  }
+  
+  .nav-open .navigation-boxes {
+    transform: translateX(0);
+    margin-top: 100px;
+    transition: transform 250ms cubic-bezier(.5, 0, .5, 1);
+    z-index: 100;
+  }
+  
+  .nav-open .nav-toggle {
+    position: relative;
+    float: right;
+  }
+  
+  .nav-open .hamburger {
+    transform: rotate(.625turn);
+  }
+  
+  .nav-open .hamburger::before {
+    transform: rotate(90deg) translateX(-6px);
+  }
+  
+  .nav-open .hamburger::after {
+    opacity: 0;
+  }
 }
 main button {
   --size: 60px;
@@ -123,11 +194,6 @@ button:hover {
   color: var(--clr-light);
 }
 
-.side-logo2{
-  display: flex;
-  position: fixed;
-}
-
 .flex-container {
   padding: 5px;
   float: right;
@@ -140,6 +206,7 @@ button:hover {
   margin: 5px;
   background: rgba(255, 255, 255, 0.2);
 }
+
 .resume-button:hover{
   background: rgba(255, 0, 0, 0.9);
 }
@@ -242,6 +309,22 @@ h4 { font-size: var(--fs-h4);
   margin-top: 3rem;
 }
 
+@media screen and (max-width: 800px){
+  .intro_para{
+    max-width: 35em;
+    color: var(--clr-darktext);
+    margin-top: 2.5em;
+    text-align: justify;
+    text-justify: inter-word;
+  }
+  .intro_name{
+    font-size: 2.92rem;
+  }
+  .intro_button{
+    margin-top: 4px;
+  }
+}
+
 /* about me section */
 
 
@@ -282,34 +365,34 @@ h4 { font-size: var(--fs-h4);
 }
 
 @media (min-width: 600px) {
-    .about-me {
-        display: grid;
-        grid-template-columns: 1fr 200px;
-        grid-template-areas: 
-            "title img"
-            "subtitle img"
-            "text img";
-        grid-column-gap: 2em;
-    }
-    
-    .section__title--about {
-        grid-area: title;
-    }
-    
-    .section__subtitle--about {
-        grid-column: 1 / -1;
-        grid-row: 2;
-        position: relative;
-        width: calc(100%);
-        padding-left: 1em;
-        padding-right: calc(200px + 4em);
-    }
-    
-    .about-me__img {
-        grid-area: img;
-        position: relative;
-        z-index: 2;
-    }
+  .about-me {
+      display: grid;
+      grid-template-columns: 1fr 200px;
+      grid-template-areas: 
+          "title img"
+          "subtitle img"
+          "text img";
+      grid-column-gap: 2em;
+  }
+  
+  .section__title--about {
+      grid-area: title;
+  }
+  
+  .section__subtitle--about {
+      grid-column: 1 / -1;
+      grid-row: 2;
+      position: relative;
+      width: calc(100%);
+      padding-left: 1em;
+      padding-right: calc(200px + 4em);
+  }
+  
+  .about-me__img {
+      grid-area: img;
+      position: relative;
+      z-index: 2;
+  }
 }
 
 
@@ -365,13 +448,15 @@ h4 { font-size: var(--fs-h4);
   color:var(--clr-light);
   padding:0px;
 }
-
-
 .proj-button{
   padding-top: 2%;
   display: flex;
   justify-content: center;
 }
+@media (min-width: 600px) {
+
+}
+
 /* Contact me */
 
 .Contact_me{

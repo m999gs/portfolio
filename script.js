@@ -4,6 +4,9 @@ const { gsap } = window;
 
 const cursorOuter = document.querySelector(".cursor--large");
 const cursorInner = document.querySelector(".cursor--small");
+const navToggle = document.querySelector('.nav-toggle');
+const navLinks = document.querySelectorAll('.nav-box');
+
 let isStuck = false;
 let mouse = {
 	x: -100,
@@ -81,3 +84,12 @@ function handleMouseLeave(e) {
 		backgroundColor: "transparent",
 	});
 }
+
+navToggle.addEventListener('click', () => {
+    document.body.classList.toggle('nav-open');
+});
+navLinks.forEach(link => {
+    link.addEventListener('click', () => {
+        document.body.classList.remove('nav-open');
+    })
+});
