@@ -213,6 +213,7 @@ button:hover {
   justify-content: center;
   align-items: center;
   margin: 15px;
+  background: #000000;
   font-size: 1.2rem;
   color: var(--clr-light);
   transition: background 0.5s ease, color 200ms ease;
@@ -307,8 +308,8 @@ h4 { font-size: var(--fs-h4);
 .initial-logo{
   padding-left: 10px;
   float: left;
-  max-width: 15%;
-  max-height: 15%;
+  max-width: 80px;
+  max-height: 80px;
   padding-top: 10px;
   z-index: 2;
 }
