@@ -64,7 +64,7 @@ a:hover{
 .side-logo{
   display: flex;
   align-items: center;
-  padding-top: 120px;
+  padding-top: 150px;
   position: fixed;
   justify-content: flex-start;
 }
