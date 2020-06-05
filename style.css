@@ -146,13 +146,21 @@ button:hover {
   align-items: center;
   flex-direction: row;
 }
+.nav-toggle button{
+  width: 0px;
+  height: 0px;
+  border: none;
+  margin: 0px;
+  padding: 0px;
+}
 
 @media screen and (max-width: 800px){
   .hamburger {
-    display: block;
-    position: relative;
+    display: flex;
     right: 2.3em;
     top: 2.3em;
+    justify-content: center;
+    align-items: center;
     background: var(--clr-dark);
   }
 
@@ -170,12 +178,10 @@ button:hover {
   .hamburger::after {
     content: '';
     position: absolute;
-    left: 0;
-    right: 0;
   }
 
-  .hamburger::before { top: 6px; }
-  .hamburger::after { bottom: 6px; }
+  .hamburger::before { transform: translateY(-7px); }
+  .hamburger::after { transform: translateY(7px); }
 
   .navigation-boxes{
     transform: translateX(500%);
@@ -197,11 +203,24 @@ button:hover {
     top: 0;
     right: 0;
   }
+
+  .nav-toggle button{
+  --size: 60px;
+  border: none;
+  min-width: var(--size);
+  min-height: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 15px;
+  font-size: 1.2rem;
+  color: var(--clr-light);
+  transition: background 0.5s ease, color 200ms ease;
+  cursor: none;
+  }
   
   .nav-open .nav-toggle {
     position: absolute;
-    top: 0;
-    right: 0;
   }
   
   .nav-open .hamburger {
@@ -209,7 +228,7 @@ button:hover {
   }
   
   .nav-open .hamburger::before {
-    transform: rotate(90deg) translateX(-6px);
+    transform: rotate(90deg);
   }
   
   .nav-open .hamburger::after {
@@ -258,6 +277,10 @@ body {
   overflow-x: hidden;
   height: 100vh;
   cursor: none;
+}
+.wrapper{
+  position: relative;
+  overflow-x: hidden;
 }
 
 img {
