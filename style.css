@@ -171,6 +171,7 @@ button:hover {
     width: 2em;
     height: 3px;
     border-radius: 1em;
+    transition: 0.5s;
   }
 
 
@@ -184,17 +185,20 @@ button:hover {
   .hamburger::after { transform: translateY(7px); }
 
   .navigation-boxes{
-    transform: translateX(500%);
+    width: 0px;
     flex-direction: column;
     margin-top: 100px;
-    transition: transform 250ms cubic-bezier(.5, 0, .5, 1);
+    transition: transform 500ms cubic-bezier(.5, 0, .5, 1);
     z-index: 100;
   }
   
   .nav-open .navigation-boxes {
-    transform: translateX(0);
-    margin-top: 100px;
-    transition: transform 250ms cubic-bezier(.5, 0, .5, 1);
+    width: 30%;
+    margin-top: 70px;
+    position: fixed;
+    right: 0;
+    background-color: rgb(0,0,0);
+    background-color: rgba(0,0,0, 0.9);
     z-index: 100;
   }
 
@@ -207,6 +211,7 @@ button:hover {
   .nav-toggle button{
   --size: 60px;
   border: none;
+  outline: none !important;
   min-width: var(--size);
   min-height: 40px;
   display: flex;
@@ -216,7 +221,6 @@ button:hover {
   background: #000000;
   font-size: 1.2rem;
   color: var(--clr-light);
-  transition: background 0.5s ease, color 200ms ease;
   cursor: none;
   }
   
@@ -226,10 +230,12 @@ button:hover {
   
   .nav-open .hamburger {
     transform: rotate(.625turn);
+    transition: 0.25s;
   }
   
   .nav-open .hamburger::before {
     transform: rotate(90deg);
+    transition: 0.25s;
   }
   
   .nav-open .hamburger::after {
@@ -316,7 +322,7 @@ h4 { font-size: var(--fs-h4);
 /* Intro section */
 .intro{
   padding-left: 7rem;
-  padding-top: 12%;
+  padding-top: 5rem;
 }
 
 .intro_hi{
@@ -342,6 +348,9 @@ h4 { font-size: var(--fs-h4);
 }
 
 @media screen and (max-width: 800px){
+  .intro{
+    z-index: 0;
+  }
   .intro_para{
     max-width: 35em;
     color: var(--clr-darktext);
