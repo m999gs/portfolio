@@ -193,12 +193,12 @@ button:hover {
   }
   
   .nav-open .navigation-boxes {
-    width: 30%;
+    width: 40%;
+    height: 100%;
     margin-top: 70px;
     position: fixed;
     right: 0;
     background-color: rgb(0,0,0);
-    background-color: rgba(0,0,0, 0.9);
     z-index: 100;
   }
 
