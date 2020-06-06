@@ -193,15 +193,22 @@ button:hover {
   }
   
   .nav-open .navigation-boxes {
-    width: 40%;
+    width: auto;
     height: 100%;
     margin-top: 70px;
     position: fixed;
+    left: 0;
     right: 0;
+    overflow: hidden;
     background-color: rgb(0,0,0);
+    background-color: rgba(0,0,0,0.97);
     z-index: 100;
   }
-
+  
+  .nav-open .wrapper{
+    position: fixed;
+    overflow: hidden;
+  }
   .nav-toggle{
     position: absolute;
     top: 0;
@@ -226,6 +233,9 @@ button:hover {
   
   .nav-open .nav-toggle {
     position: absolute;
+  }
+  .nav-open .initial-logo{
+    opacity: 0;
   }
   
   .nav-open .hamburger {
