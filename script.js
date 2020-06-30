@@ -5,7 +5,7 @@ const { gsap } = window;
 const cursorOuter = document.querySelector(".cursor--large");
 const cursorInner = document.querySelector(".cursor--small");
 const navToggle = document.querySelector('.nav-toggle');
-const navLinks = document.querySelectorAll('.nav-box');
+const navLinks = document.querySelectorAll('.navigation-boxes');
 
 let isStuck = false;
 let mouse = {

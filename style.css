@@ -116,6 +116,7 @@ button{
 }
 .other_buttons{
   padding: 15px;
+  border-radius: 5px;
 }
 button:hover {
   background: rgba(255, 255, 255, 0.04);
@@ -131,6 +132,7 @@ button:hover {
   width: 120px;
   text-align: center;
   border: none;
+  border-radius: 5px;
   margin: 5px;
   background: rgba(255, 255, 255, 0.2);
 }
@@ -571,6 +573,7 @@ h4 { font-size: var(--fs-h4);
 
 .social-list__item {
   margin: 0 .5em;
+  font-size: large;
   transition-duration: 0.5s;
 }
 
