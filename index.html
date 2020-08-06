@@ -61,48 +61,29 @@
 	<div class="nav-toggle">
 		<button><span class="hamburger"></span></button>
 	</div>
-	</div class = "animation-area">
-		<header class="header">
-			<pre class="flex flex--full stream">
-				<span class="stream__text stream__text--repeat-y stream__text--reverse">
-							/**
-							* sort Used to order an array of integers in ascending order (O(n)).
-							* @param {Array} arr
-							* @return {Promise}
-							*/
-							
-							function sort (arr) {
-								return new Promise(resolve => {
-									const sorted = [];
-									
-									for (const item of arr) {
-										setTimeout(item => sorted.push(item), item, item);
-									}
-									
-									setTimeout(() => resolve(sorted), arr.reduce((a, b) => a + b, 0) + 1);
-								});
-							}
-							/**
-							* sort Used to order an array of integers in ascending order (O(n)).
-							* @param {Array} arr
-							* @return {Promise}
-							*/
-							
-							function sort (arr) {
-								return new Promise(resolve => {
-									const sorted = [];
-									
-									for (const item of arr) {
-										setTimeout(item => sorted.push(item), item, item);
-									}
-									
-									setTimeout(() => resolve(sorted), arr.reduce((a, b) => a + b, 0) + 1);
-								});
-							}
-				</span>
-			</pre>
-		</header>
-	</div>
+	<header class="header">
+		<pre class="flex flex--full stream">
+			<span class="stream__text stream__text--repeat-y stream__text--reverse">
+						/**
+						* sort Used to order an array of integers in ascending order (O(n)).
+						* @param {Array} arr
+						* @return {Promise}
+						*/
+						
+						function sort (arr) {
+							return new Promise(resolve => {
+								const sorted = [];
+								
+								for (const item of arr) {
+									setTimeout(item => sorted.push(item), item, item);
+								}
+								
+								setTimeout(() => resolve(sorted), arr.reduce((a, b) => a + b, 0) + 1);
+							});
+						}
+			</span>
+		</pre>
+	</header>
 	<!-- Introduction -->
 	<section class="intro" id="home">
 		<h4 class="intro_hi">Hi, I am </h4>
