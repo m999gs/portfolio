@@ -15,8 +15,9 @@
   --fw-reg: 300;
   --fw-bold: 900;
   
-  --clr-light: #fff;
-  --clr-dark: #000000;
+  --clr-light: #ffffff;
+  --clr-dark: #222629;
+  --clr-frontbg: rgba(34, 38, 41,0.8);
   --clr-accent: #ff3c3c;
   --clr-darktext: #9d9fa1;
   --clr-light-background:#212020;
@@ -149,15 +150,16 @@ button:hover {
   align-items: center;
   flex-direction: row;
 }
-.nav-toggle button{
+.nav-toggle{
   width: 0px;
   height: 0px;
-  border: none;
-  margin: 0px;
-  padding: 0px;
 }
 
 @media screen and (max-width: 800px){
+  .nav-toggle{
+    height: auto;
+    width: auto;
+  }
   .hamburger {
     display: flex;
     right: 2.3em;
@@ -211,7 +213,7 @@ button:hover {
   .nav-toggle{
     position: absolute;
     top: 0;
-    right: 0;
+    width: 100%;
   }
 
   .nav-toggle button{
@@ -221,10 +223,10 @@ button:hover {
   min-width: var(--size);
   min-height: 40px;
   display: flex;
+  float: right;
   justify-content: center;
   align-items: center;
   margin: 15px;
-  background: #000000;
   font-size: 1.2rem;
   color: var(--clr-light);
   cursor: none;
@@ -232,6 +234,7 @@ button:hover {
   
   .nav-open .nav-toggle {
     position: absolute;
+    background: #000000;
   }
   .nav-open .initial-logo{
     opacity: 0;
@@ -287,7 +290,8 @@ button:hover {
 }
 
 body {
-  background: var(--clr-dark);
+  background-image: url('images/unsplashBG1.jpg');
+  background-size: cover;
   color: var(--clr-light);
   margin: 0;
   font-family: var(--ff-primary);
@@ -301,6 +305,12 @@ body {
 .wrapper{
   position: relative;
   overflow-x: hidden;
+}
+
+.layer {
+  background-color: var(--clr-frontbg);
+  top: 0;
+  left: 0;
 }
 
 img {
@@ -557,9 +567,11 @@ h4 { font-size: var(--fs-h4);
 /* Projects */
 
 .projects {
-  background-color: var(--clr-dark);
+  background-color: var(--clr-frontbg);
   color: var(--clr-light);
-  margin-left: 3em;
+  /* margin-left: 3em; */
+  padding-left: 8em;
+  padding-right: 8em;
   text-align: center;
   overflow: hidden;    
 }

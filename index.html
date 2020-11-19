@@ -12,6 +12,7 @@
 
 	<link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.8.1/css/all.min.css'>
 	<link rel='stylesheet' href='https://fonts.googleapis.com/css?family=Montserrat&amp;display=swap"rel="stylesheet'>
+	<script src="https://code.iconify.design/1/1.0.7/iconify.min.js"></script>
 	<link rel="stylesheet" href="./style.css">
 </head>
 
@@ -21,24 +22,20 @@
 	<!-- Side logo is the starting flex -->
 	<div class="side-logo">
 		<main>
-			<button onclick=" window.open('https://github.com/m999gs','_blank')">
+			<button onclick=" window.open('https://github.com/m999gs','_blank')" title="GitHub">
 				<ion-icon name="logo-github"></ion-icon>
 			</button>
-			<button onclick=" window.open('https://www.linkedin.com/in/m999gs/','_blank')">
+			<button onclick=" window.open('https://www.linkedin.com/in/m999gs/','_blank')" title="LinkedIn">
 				<ion-icon name="logo-linkedin"></ion-icon>
 			</button>
-			<button onclick=" window.open('https://www.facebook.com/m999g','_blank')">
+			<button onclick=" window.open('https://leetcode.com/m999gs/','_blank')" title="LeetCode">
+				<span class="iconify" data-icon="simple-icons:leetcode" data-inline="false"></span>
+			</button>
+			<button onclick=" window.open('https://www.facebook.com/m999g','_blank')" title="Facebook">
 				<ion-icon name="logo-facebook"></ion-icon>
 			</button>
-			<button onclick=" window.open('https://twitter.com/m999gs','_blank')">
-				<ion-icon name="logo-twitter"></ion-icon>
-			</button>
-			<button onclick=" window.open('https://www.instagram.com/mohituf/','_blank')">
+			<button onclick=" window.open('https://www.instagram.com/mohituf/','_blank')" title="Instagram">
 				<ion-icon name="logo-instagram"></ion-icon>
-			</button>
-			<button
-				onclick=" window.open('https://www.youtube.com/channel/UCudLHyuXrxwoPJm15zebfGQ?view_as=subscriber','_blank')">
-				<ion-icon name="logo-youtube"></ion-icon>
 			</button>
 
 		</main>
@@ -85,23 +82,23 @@
 		</pre>
 	</header> -->
 	<!-- Introduction -->
-	<section class="intro" id="home">
-		<h4 class="intro_hi">Hi, I am </h4>
-		<h1 class="intro_name">
-			<strong>Mohit Garg</strong>
-		</h1>
-		<h2 class="intro_name_subtitle">I'm a Masters student at University of Florida.</h2>
+	<section class="intro layer" id="home">
+			<h4 class="intro_hi">Hi, I am </h4>
+			<h1 class="intro_name">
+				<strong>Mohit Garg</strong>
+			</h1>
+			<h2 class="intro_name_subtitle">I'm a Masters student at University of Florida.</h2>
 
-		<p class="intro_para">
-			I love building Web and Android Applications to make a difference. I am enthusiastic to learn
-			latest technologies and techniques to hone my technical skills.
-		</p>
+			<p class="intro_para">
+				I love building Web and Android Applications to make a difference. I am enthusiastic to learn
+				latest technologies and techniques to hone my technical skills.
+			</p>
 
-		<main class="intro_button">
-			<button onclick="location.href = 'mailto:m999gs@gmail.com';" class="other_buttons">
-				Get In Touch
-			</button>
-		</main>	
+			<main class="intro_button">
+				<button onclick="location.href = 'mailto:m999gs@gmail.com';" class="other_buttons">
+					Get In Touch
+				</button>
+			</main>	
 	</section>
 
 	<!-- About me -->
@@ -123,6 +120,7 @@
 			<li class="aboutme_table_list">Android Application</li>
 			<li class="aboutme_table_list">HTML & CSS</li>
 			<li class="aboutme_table_list">Elixir</li>
+			<li class="aboutme_table_list">Competitive Programming</li>
 
 		</ul>
 		<img src="images/my_pic.jpg" alt="my picture here" class="about-me__img">
@@ -130,7 +128,7 @@
 	</section>
 
 	<!-- Projects -->
-	<section class="projects" id="proj">
+	<section class="projects layer" id="proj">
 		<h2 class="section__title">My Projects</h2>
 
 		<div class="portfolio">
